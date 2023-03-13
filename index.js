@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/', router);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.get("*", function (_, res) {
