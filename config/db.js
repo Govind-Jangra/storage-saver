@@ -4,10 +4,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const DBConnection = async () => {
-    const USERNAME = process.env.DB_USERNAME;
-    const PASSWORD = process.env.DB_PASSWORD;
 
-    const MONGO_URI = `mongodb://localhost:27017`;
+
+    const MONGO_URI = process.env.DB;
     try {
         await mongoose.connect(MONGO_URI, { useNewUrlParser: true });
         console.log('Database connected successfully');
