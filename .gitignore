@@ -4,9 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
-
+client/node_modules
+server/node_modules
+node_modules
+.env
+client/.env
+server/.env
 # testing
 /coverage
+.gitignore
 
 # production
 /build
