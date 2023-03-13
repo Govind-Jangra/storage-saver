@@ -12,7 +12,7 @@ function App() {
 
   const uploadFile = async (data) => {
     try {
-        const response = await axios.post(`http://localhost:8000/upload`, data);
+        const response = await axios.post(`/upload`, data);
         return response.data;
     } catch (error) {
         console.log('Error of api ', error.message);
